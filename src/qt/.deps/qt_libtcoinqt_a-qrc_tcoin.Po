@@ -1,0 +1,4 @@
+qt/qt_libtcoinqt_a-qrc_tcoin.o: qt/qrc_tcoin.cpp \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

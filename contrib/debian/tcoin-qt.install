@@ -1,0 +1,6 @@
+usr/local/bin/tcoin-qt usr/bin
+share/pixmaps/tcoin32.xpm usr/share/pixmaps
+share/pixmaps/tcoin16.xpm usr/share/pixmaps
+share/pixmaps/tcoin128.png usr/share/pixmaps
+debian/tcoin-qt.desktop usr/share/applications
+debian/tcoin-qt.protocol usr/share/kde4/services/

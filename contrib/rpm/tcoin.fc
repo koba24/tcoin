@@ -1,0 +1,8 @@
+/usr/bin/tcoin-cli		--	gen_context(system_u:object_r:tcoin_exec_t,s0)
+/usr/sbin/tcoind		--	gen_context(system_u:object_r:tcoin_exec_t,s0)
+/usr/lib(64)?/tcoin/tcoind		--	gen_context(system_u:object_r:tcoin_exec_t,s0)
+
+/etc/tcoin(/.*)?		gen_context(system_u:object_r:tcoin_conf_t,s0)
+/var/lib/tcoin(/.*)?		gen_context(system_u:object_r:tcoin_var_lib_t,s0)
+
+(/var)?/run/tcoind(/.*)?   gen_context(system_u:object_r:tcoin_var_run_t,s0)

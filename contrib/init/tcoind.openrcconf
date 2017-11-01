@@ -1,0 +1,33 @@
+# /etc/conf.d/tcoind: config file for /etc/init.d/tcoind
+
+# Config file location
+#TCOIND_CONFIGFILE="/etc/tcoin/tcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $TCOIND_USER)
+#TCOIND_PIDDIR="/var/run/tcoind"
+
+# What filename to give the pidfile
+#TCOIND_PIDFILE="${TCOIND_PIDDIR}/tcoind.pid"
+
+# Where to write tcoind data (be mindful that the blockchain is large)
+#TCOIND_DATADIR="/var/lib/tcoind"
+
+# User and group to own tcoind process
+#TCOIND_USER="tcoin"
+#TCOIND_GROUP="tcoin"
+
+# Path to tcoind executable
+#TCOIND_BIN="/usr/bin/tcoind"
+
+# Nice value to run tcoind under
+#TCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+TCOIND_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for tcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+TCOIND_SIGTERM_TIMEOUT=60

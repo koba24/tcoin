@@ -1,0 +1,22 @@
+[Unit]
+Description=Tcoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=tcoin
+Group=tcoin
+
+Type=forking
+PIDFile=/var/lib/tcoind/tcoind.pid
+ExecStart=/usr/bin/tcoind -daemon -pid=/var/lib/tcoind/tcoind.pid \
+-conf=/etc/tcoin/tcoin.conf -datadir=/var/lib/tcoind -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
