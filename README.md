@@ -92,7 +92,7 @@ You can mine using cpuminer-multi, available here: https://github.com/tpruvot/cp
 
 You can mine using the following command:
 
-`./cpuminer -a x17 -o http://localhost:9286 -u YourRPCuserName -p YourRPCpassword --coinbase-addr=tKe1UcMpA1Ldv5i27mjq7N4mEvbiNc5yLL`
+`./cpuminer -a algorithm -o http://localhost -u YourRPCuserName -p YourRPCpassword --coinbase-addr=tKe1UcMpA1Ldv5i27mjq7N4mEvbiNc5yLL`
 
 You can generate a new address using:
 
